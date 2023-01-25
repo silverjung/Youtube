@@ -40,3 +40,160 @@
     cursor: pointer;
     outline: none;
   }
+/* Header */
+header{
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing);
+    color: var(--white-color);
+}
+.logo{
+    font-size: var(--font-large);
+}
+.fa-youtube{
+    color: var(--red-color);
+}
+.icons .fa-magnifying-glass{
+    margin-right: var(--spacing);
+}
+.player{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: var(--black-color);
+}
+.player video{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
+.infoAndnext > .info{
+    padding: var(--spacing);
+}
+.info .tag .hashtag{
+    display: flex;
+    color: var(--blue-color);
+    font-size: var(--font-small);
+}
+.info .tag .hashtag li{
+    margin-right: var(--spacing);
+}
+.info .titleButton{
+    display: flex;
+}
+.info .titleButton .title{
+    font-size: var(--font-medium);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-right: var(--spacing);
+}
+.info .titleButton .moreBtn{
+    height: 100%;
+}
+.info .views{
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+.info .actions{
+    display: flex;
+    justify-content: space-around;
+    margin-right: var(--spacing) 0;
+}
+.actions>li{
+    padding: var(--spacing);
+}
+.actions button{
+    display: flex;
+    flex-direction: column;
+    color: var(--grey-dark-color);
+    font-size: var(--font-small);
+}
+.actions button svg{
+    margin-bottom: calc(var(--spacing) / 2);
+    font-size: var(--font-regular);
+    width: 100%;
+}
+.actions li:first-child button svg{
+    color: var(--blue-color);
+}
+.channel{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+.channel .metadata{
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-small) 0;
+}
+.metadata img{
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    margin-right: var(--spacing);
+}
+.channel .metadata .info{
+    display: flex;
+    flex-direction: column;
+}
+.channel .metadata .info .nickname{
+    font-size: var(--font-medium);
+}
+.channel .metadata .info .subcribers{
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+.channel button{
+    color: var(--red-color);
+    font-size: var(--font-medium);
+}
+.infoAndnext{
+    display: flex;
+    flex-direction: column;
+}
+.next{
+    padding: 0 var(--spacing);
+}
+.next .upNext{
+    font-size: var(--font-medium);
+    color: var(--grey-dark-color);
+    margin-bottom: calc(var(--spacing) / 2);
+}
+.next .item{
+    display: flex;
+    margin-top: var(--spacing);
+}
+.next .item .img{
+    flex: 1 1 35%;
+    margin-right: var(--spacing);
+}
+.next .item .img img{
+    width: 100%;
+}
+.next .item .videoInfo{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 65%;
+}
+.videoInfo .title{
+    font-size: var(--font-small);
+}
+.videoInfo .name,.views{
+    font-size: var(--font-micro);
+    color: var(--grey-dark-color);
+}
+.next .item button{
+    flex: 1 1 5%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .infoAndnext{
+        flex-direction: row;
+        margin: var(--spacing) 0;
+    }
+}
